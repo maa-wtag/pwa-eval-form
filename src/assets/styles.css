@@ -1,0 +1,144 @@
+:root {
+  --green: #22c55e;
+  --blue: #2457f5;
+  --muted: #6b7280;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto,
+    Helvetica, Arial;
+  background: #f6f7fb;
+  color: #111827;
+}
+header {
+  background: var(--green);
+  color: white;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.container {
+  max-width: 1080px;
+  margin: 20px auto;
+  padding: 0 16px;
+}
+.h1 {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 12px 0 20px;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+.row + .row {
+  border-top: 1px solid #eef0f4;
+}
+.badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e8f0ff;
+  color: #2b50ee;
+  font-weight: 700;
+}
+.small {
+  color: var(--muted);
+  font-size: 14px;
+}
+.button {
+  background: var(--blue);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.accordion-title {
+  font-weight: 700;
+}
+.right-panel {
+  width: 420px;
+  min-width: 420px;
+}
+.panel {
+  padding: 16px;
+}
+.input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #dde2ea;
+  font: inherit;
+}
+.textarea {
+  height: 110px;
+  resize: vertical;
+}
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+.btn-pill {
+  border-radius: 10px;
+  padding: 10px 12px;
+  border: 1px solid #e3e6ef;
+  background: white;
+  cursor: pointer;
+}
+.btn-pill.active {
+  border-color: var(--green);
+  color: var(--green);
+  font-weight: 700;
+}
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+.image-grid img {
+  width: 100%;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.tag {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: #eef7ff;
+  color: #2b50ee;
+  font-size: 12px;
+}
+.toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  background: #111827;
+  color: white;
+  padding: 12px 14px;
+  border-radius: 8px;
+}
+.syncbar {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
